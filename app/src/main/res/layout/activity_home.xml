@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#673AB7"
+            app:title="Traffic Risk"
+            app:titleTextColor="@android:color/white" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Road Type Spinner -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Road Category"
+                android:textColor="#000000" />
+
+            <Spinner
+                android:id="@+id/spRoadCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/road_categories"
+                android:minHeight="48dp" />
+
+            <!-- Numeric Inputs -->
+            <EditText
+                android:id="@+id/etTrafficScore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Traffic Score"
+                android:inputType="numberDecimal"
+                android:minHeight="48dp"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/etWeatherScore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Weather Score"
+                android:inputType="numberDecimal"
+                android:minHeight="48dp"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/etTimeScore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Time Score"
+                android:inputType="numberDecimal"
+                android:minHeight="48dp"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/etRoadTypeScore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Road Type Score"
+                android:inputType="numberDecimal"
+                android:minHeight="48dp"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/etRiskFactor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Risk Factor"
+                android:inputType="numberDecimal"
+                android:minHeight="48dp"
+                android:textColor="#000000" />
+
+            <!-- Button -->
+            <Button
+                android:id="@+id/btnPredict"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Predict Risk" />
+
+            <!-- Fragment Container -->
+            <FrameLayout
+                android:id="@+id/fragment_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/box_background"
+                android:padding="16dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TrafficAccident</string>
+    <string-array name="road_categories">
+        <item>City Road</item>
+        <item>Coastal Road</item>
+        <item>Highway</item>
+        <item>Mountain Road</item>
+        <item>Rural Road</item>
+    </string-array>
+</resources>
