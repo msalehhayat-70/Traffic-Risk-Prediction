@@ -1,10 +1,9 @@
+Traffic Risk Prediction App
+Overview
 
- Traffic Risk Prediction App
+Traffic Risk Prediction App is an Android application that analyzes road and traffic conditions based on user inputs to predict the Traffic Risk Level. The app uses an on-device TensorFlow Lite model to provide fast and reliable predictions.
 
- Overview
-**Traffic Risk Prediction App** ek Android application hai jo users ke inputs ke basis par road aur traffic conditions ko analyze karke **Traffic Risk Level** predict karta hai. App on-device **TensorFlow Lite** model use karta hai jo fast aur reliable predictions provide karta hai.  
-
-Ye app drivers aur commuters ko safer aur informed travel decisions lene me help karta hai.
+It helps drivers and commuters make safer and more informed travel decisions.
 
 ---
 
